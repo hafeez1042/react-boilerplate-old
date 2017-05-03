@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 
-export default class App extends Component {
-
-  componentDidMount() {
-    $('h1').text('jQueryLoaded');
+export default class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      PageName: 'Home',
+    };
   }
-
+  
   render() {
     return (
       <div>
-        <h1>This is Home Page</h1>
+        <h1>This is {this.state.PageName} page</h1>
       </div>
     );
   }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {styles} from './App.scss';
+import { styles } from './App.scss';
 
 export default class App extends Component {
   render() {
@@ -7,7 +7,6 @@ export default class App extends Component {
       <div className={`${styles}`}>
         <header>Header</header>
         {this.props.children}
-        
         <footer>Footer</footer>
       </div>
     );
